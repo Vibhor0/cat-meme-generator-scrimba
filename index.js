@@ -93,3 +93,12 @@ modalBtnEl.addEventListener("click", closeModal);
 function closeModal() {
   modalEl.style.display = "none";
 }
+
+/*
+  This event listener listens for any outside clicks in HTML document to close the modal.
+*/
+document.addEventListener('mouseup', function(e) {
+  if (!modalEl.contains(e.target)) {
+      modalEl.style.display = 'none';
+  }
+});

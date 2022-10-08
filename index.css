@@ -91,10 +91,11 @@ footer {
     background: #D8DBE2;
     height: 600px;
     width: 600px;
-    display: none;
+    display: none; 
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: end;
+    border-radius: 5px;
+    box-shadow: 10px 10px #58A4B0;
 }
 .modal-close-btn {
     float: right;
@@ -105,14 +106,22 @@ footer {
     height: 24px;
     margin: 4px 6px;
 }
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    box-shadow: 2px 2px grey;
+    width: 26px;
+    height: 26px;
+}
 button:hover, 
 button:active,
 button:focus {
     cursor: pointer;
 }
 .modal-inner-container {
-    height:500px;
-    width:500px;
+    height:540px;
+    width:540px;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 .selected-radio-item {
     background-color: #373F51;
